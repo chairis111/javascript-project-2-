@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Document</title>
+</head>
+
+<body class="bg-dark">
+  <!-- navbar -->
+  <nav class="navbar navbar-expand-lg bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand text-bg-dark" href="./index.html">ForeCaster</a>
+      <button class="navbar-toggler" 
+      type="button" 
+      data-bs-toggle="collapse" 
+      data-bs-target="#navbarNav" 
+      aria-controls="navbarNav" 
+      aria-expanded="false" 
+      aria-label="Toggle navigation">
+      
+      <span class="navbar-dark navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active text-bg-dark" aria-current="page" href="./index.html">Live Weather</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-bg-dark" href="./contact.html">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  </nav>
+  
+  <div class="image">
+    <div class="main-hd">
+      <h3>Current Weather Temperatures</h3>
+      <p>Find the current temperatures in your State or Region with live updates</p>
+    </div>
+    <div class="text-center">
+      <a href="./contact.html"><button class="bg-primary btn">Contact Us</button></a>
+    </div>
+  </div>
+
+  <!-- Top Heading -->
+  <section class="top-heading">
+    <div>
+      <h3 class="title">Current Weather Forcast</h3>  
+    </div>
+    <!-- Live date, time and Location -->
+    <div id="time">
+      <h5 class="date">Date</h5>
+      <h5 class="time">Time</h5>
+    </div>
+
+    <!-- Search City -->
+  <div class="search-box">
+    <div class="search">
+      <input type="text" placeholder="enter city name"
+      spellcheck="false">
+      <button id="search-btn"><img src="./images/search.png"></button>
+    </div>
+  </div>
+  </section>
+
+
+<!-- Live Weather Forecast Section -->
+  <header class="header">
+
+
+
+
+    <!-- Main Page left Column Current Temp-->
+   <div class="weather">
+    <img src="images/clear.png" class="weather-icon"/>
+    <div class="header-current-temp">
+      <h1 id="temp">22&deg;c</h1>
+      <h2 id="city">Melbourne</h2>
+    </div>
+   </div>
+   
+   <!-- Main Page Right Column Temp Stats-->
+   <div class="header-right">
+
+    <div class="info-group">
+
+      <div class="label">High</div>
+      <h5 id="high-temp" class="temps">22&deg;c</h5>      
+    </div>
+
+    <div class="info-group">
+      <div class="label">Low</div>
+      <h5 id="low-temp" class="temps">22&deg;c</h5>      
+    </div>
+
+    <div class="info-group">
+      <div class="label">Humidity</div>
+      <h5 id="humidity" class="temps">49%</h5>      
+    </div>
+
+    <div class="info-group">
+      <div class="label">Wind</div>
+      <h5 id="wind" class="temps">3 <span class="speed">km/h</span></h5>      
+    </div>
+   </div>
+  </header>
+
+
+  <footer>
+    <h6 class="title footer">Weather Forecast API 2023</h6>
+  </footer> 
+  
+
+<script src="./js/main.js"></script>
+<script src="./js/time.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
+
